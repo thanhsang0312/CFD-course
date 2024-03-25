@@ -1,8 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
-
-const Button = ({ variant = "primary", className, children, ...rest }) => {
-=======
 import { Link } from "react-router-dom";
 
 const Button = ({
@@ -15,7 +11,6 @@ const Button = ({
   type,
   ...rest
 }) => {
->>>>>>> 5597a8e (update)
   let variantClass = "";
   switch (variant) {
     case "primary":
@@ -28,11 +23,6 @@ const Button = ({
       return "";
   }
 
-<<<<<<< HEAD
-  return (
-    <button className={`${variantClass} ${className}`} {...rest}>
-      {children}
-=======
   if (disabled) {
     variantClass = "btn btn--grey";
     rest.onClick = () => {};
@@ -83,7 +73,6 @@ const Button = ({
           </path>
         </svg>
       )}
->>>>>>> 5597a8e (update)
     </button>
   );
 };

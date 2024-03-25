@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-import React from "react";
-
-const MyInfo = () => {
-=======
 import React, { useEffect, useRef, useState } from "react";
-import Input from "../../components/Input";
-import { useAuthContext } from "../../context/AuthContext";
-import TextArea from "../../components/TextArea";
 import Button from "../../components/Button";
+import Input from "../../components/Input";
+import TextArea from "../../components/TextArea";
+import { useAuthContext } from "../../context/AuthContext";
 
 const MyInfo = () => {
   const { profile, handleUpdateProfile } = useAuthContext();
@@ -100,87 +95,10 @@ const MyInfo = () => {
     }
   };
 
->>>>>>> 5597a8e (update)
   return (
     <div className="tab__content-item">
       <form action="#" className="form">
         <div className="form-container">
-<<<<<<< HEAD
-          <div className="form-group">
-            <label className="label">
-              Họ và tên <span>*</span>
-            </label>
-            <input
-              defaultValue="Nghĩa Trần"
-              type="text"
-              className="form__input formerror"
-            />
-            <div className="error">Vui lòng nhập họ và tên</div>
-          </div>
-          <div className="form-group">
-            <label className="label">
-              Số điện thoại <span>*</span>
-            </label>
-            <input
-              defaultValue={989596913}
-              type="text"
-              className="form__input"
-            />
-          </div>
-        </div>
-        <div className="form-container">
-          <div className="form-group">
-            <label className="label">
-              Email <span>*</span>
-            </label>
-            <input
-              defaultValue="trannghia2018@gmail.com"
-              disabled
-              type="email"
-              className="form__input"
-            />
-          </div>
-          <div className="form-group">
-            <div className="form-grouppass">
-              <label className="label">
-                Mật khẩu <span>*</span>
-              </label>
-              <div className="textchange btnmodal" data-modal="mdchangepass">
-                Đổi mật khẩu
-              </div>
-            </div>
-            <input
-              defaultValue={12345568900}
-              type="password"
-              disabled
-              className="form__input"
-            />
-          </div>
-        </div>
-        <div className="form-group">
-          <label className="label">Facebook URL</label>
-          <input
-            defaultValue="https://nghiatran.info"
-            type="text"
-            className="form__input"
-            placeholder
-          />
-        </div>
-        <div className="form-group">
-          <label className="label">Website</label>
-          <input defaultValue type="text" className="form__input" />
-        </div>
-        <div className="form-container textarea">
-          <label className="label">Giới thiệu bản thân</label>
-          <textarea className="form__input" name="content" defaultValue={""} />
-        </div>
-        <p className="noti">Cập nhận thông tin thành công</p>
-        <div className="form-group">
-          <div className="btnsubmit">
-            <button className="btn btn--primary">Lưu lại</button>
-          </div>
-        </div>
-=======
           <Input
             label="Họ và tên"
             required
@@ -234,7 +152,6 @@ const MyInfo = () => {
         >
           Gửi
         </Button>
->>>>>>> 5597a8e (update)
       </form>
     </div>
   );

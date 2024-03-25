@@ -10,14 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "axios": "^1.6.7",
-=======
     "antd": "^5.15.0",
     "axios": "^1.6.7",
     "js-cookie": "^3.0.5",
     "moment": "^2.30.1",
->>>>>>> 5597a8e (update)
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.1",

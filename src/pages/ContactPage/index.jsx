@@ -1,11 +1,7 @@
 import React from "react";
 import ContactTitle from "./ContactTitle";
 import ContactSidebar from "./ContactSidebar";
-<<<<<<< HEAD
-import ContactForm from "./ContactForm";
-=======
 import ContactForm from "./ContactForm.jsx";
->>>>>>> 5597a8e (update)
 
 const ContactPage = () => {
   const handleFormSubmit = (formData) => {
