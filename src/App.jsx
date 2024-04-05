@@ -1,22 +1,23 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import MainLayout from "./layout/MainLayout";
-import CourseDetailPage from "./pages/CourseDetailPage";
-import CourseOrderPage from "./pages/CourseOrderPage";
-import CoursesPage from "./pages/CoursePage";
-import HomePage from "./pages/HomePage";
+
 import PATHS from "./const/paths";
+import MainLayout from "./layout/MainLayout";
+import HomePage from "./pages/HomePage";
+import PrivateRoute from "./components/PrivateRoute";
+import CourseOrderPage from "./pages/CourseOrderPage";
 import ProfilePage from "./pages/ProfilePage";
 import MyInfo from "./pages/ProfilePage/MyInfo";
 import MyCourse from "./pages/ProfilePage/MyCourse";
 import MyPayment from "./pages/ProfilePage/MyPayment";
+import CoursesPage from "./pages/CoursesPage";
+import CourseDetailPage from "./pages/CourseDetailPage";
+import BlogPage from "./pages/BlogPage";
+import BlogDetailPage from "./pages/BlogDetailPage";
 import PaymentPage from "./pages/PaymentPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import NotfoundPage from "./pages/NotfoundPage";
-import PrivateRoute from "./components/PrivateRoute";
-import BlogPage from "./pages/BlogPage";
-import BlogDetailPage from "./pages/BlogDetailPage";
 
 function App() {
   return (
