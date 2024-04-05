@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import useDebounce from "../../hooks/useDebounce";
 import useMutation from "../../hooks/useMutation";
 import { blogService } from "../../services/blogService";
-import { courseService } from "../../services/courseSevice";
-import BlogDetailTitle from "./BlogDetailTitle";
 import BlogDetailContent from "./BlogDetailContent";
 import BlogDetailRelated from "./BlogDetailRelated";
-import useDebounce from "../../hooks/useDebounce";
+import BlogDetailTitle from "./BlogDetailTitle";
 
 const BlogDetailPage = () => {
   const params = useParams();

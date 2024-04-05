@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
-import BlogDetailPage from "./pages/BlogDetailPage";
 import CourseDetailPage from "./pages/CourseDetailPage";
 import CourseOrderPage from "./pages/CourseOrderPage";
 import CoursesPage from "./pages/CoursePage";
@@ -17,6 +16,7 @@ import PrivacyPage from "./pages/PrivacyPage";
 import NotfoundPage from "./pages/NotfoundPage";
 import PrivateRoute from "./components/PrivateRoute";
 import BlogPage from "./pages/BlogPage";
+import BlogDetailPage from "./pages/BlogDetailPage";
 
 function App() {
   return (
