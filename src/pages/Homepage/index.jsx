@@ -12,7 +12,6 @@ import SectionHero from "./SectionHero";
 import SectionRegister from "./SectionRegister";
 import SectionTeams from "./SectionTeams";
 import SectionTestimonial from "./SectionTestimonial";
-// import SectionTestimonial from "./SectionTestimonial";
 
 const HomePage = () => {
   const { data: coursesData, loading: coursesLoading } = useQuery(
