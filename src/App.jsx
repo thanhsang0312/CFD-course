@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import PATHS from "./const/paths";
 import MainLayout from "./layout/MainLayout";
-import HomePage from "./pages/HomePage";
 import PrivateRoute from "./components/PrivateRoute";
 import CourseOrderPage from "./pages/CourseOrderPage";
 import ProfilePage from "./pages/ProfilePage";
@@ -18,6 +17,7 @@ import AboutPage from "./pages/AboutPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import NotfoundPage from "./pages/NotfoundPage";
 import CoursesPage from "./pages/CoursePage";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
