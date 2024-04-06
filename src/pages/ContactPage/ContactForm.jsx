@@ -3,6 +3,8 @@ import Input from "../../components/Input";
 import Button from "../../components/Button";
 import Select from "../../components/Select";
 import TextArea from "../../components/TextArea";
+import { message } from "antd";
+import { subscribesService } from "../../services/subscribesService";
 
 const ContactForm = ({ handleFormSumit }) => {
   const [form, setForm] = useState({
@@ -20,7 +22,7 @@ const ContactForm = ({ handleFormSumit }) => {
     setForm({ ...form, [name]: value });
   };
 
-  const _onSubmit = () => {
+  const _onSubmit = async () => {
     console.log("submit form", form);
     // Start Validate
     const errorObj = {};
@@ -50,7 +52,25 @@ const ContactForm = ({ handleFormSumit }) => {
       console.log("Submit Error", errorObj);
     } else {
       console.log("Submit Success", form);
-      handleFormSumit?.(form);
+      message.success("Submit successfully!");
+      try {
+        const res = await subscribesService.subscribes({
+          ...form,
+          description: form.content,
+          title: form.topic,
+        });
+      } catch (error) {
+        message.error("Submit unsuccessfully!");
+        console.log("error", error);
+      } finally {
+        setForm({
+          name: "",
+          email: "",
+          phone: "",
+          topic: "",
+          content: "",
+        });
+      }
     }
   };
 

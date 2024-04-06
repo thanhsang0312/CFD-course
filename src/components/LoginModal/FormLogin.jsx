@@ -3,6 +3,7 @@ import { useAuthContext } from "../../context/AuthContext";
 import { REGEX } from "../../const/regex";
 import Input from "../Input";
 import { message } from "antd";
+import { MODAL_TYPE } from "../../const/generals";
 
 const FormLogin = () => {
   const { handleShowModal, handleCloseModal, handleLogin } = useAuthContext();
@@ -11,6 +12,11 @@ const FormLogin = () => {
     email: "",
     password: "",
   });
+
+  const _onRegisterClick = (e) => {
+    e.stopPropagation();
+    handleShowModal(MODAL_TYPE.register);
+  };
 
   const [error, setError] = useState({});
 
@@ -60,7 +66,11 @@ const FormLogin = () => {
     >
       <div className="form__bottom">
         <p>Bạn chưa có tài khoản?</p>
-        <div className="color--primary btnmodal" data-modal="mdregister">
+        <div
+          className="color--primary btnmodal"
+          data-modal="mdregister"
+          onClick={_onRegisterClick}
+        >
           <strong>Đăng ký</strong>
         </div>
       </div>

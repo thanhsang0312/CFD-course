@@ -1,6 +1,13 @@
 import React from "react";
+import { useAuthContext } from "../../context/AuthContext";
+import { MODAL_TYPE } from "../../const/generals";
 
 const SectionHero = () => {
+  const { handleShowModal } = useAuthContext();
+  const _onLoginClick = (e) => {
+    e.stopPropagation();
+    handleShowModal(MODAL_TYPE.login);
+  };
   return (
     <section className="hero">
       <div className="hero__content">
@@ -12,7 +19,11 @@ const SectionHero = () => {
           <p className="text">
             Dạy từ kinh nghiệm, học từ thực tế để tạo ra sản phẩm có giá trị.
           </p>
-          <div className="btn btn--primary btnmodal" data-modal="mdlogin">
+          <div
+            className="btn btn--primary btnmodal"
+            data-modal="mdlogin"
+            onClick={_onLoginClick}
+          >
             Bắt đầu học
           </div>
         </div>
