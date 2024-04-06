@@ -9,7 +9,6 @@ import ProfilePage from "./pages/ProfilePage";
 import MyInfo from "./pages/ProfilePage/MyInfo";
 import MyCourse from "./pages/ProfilePage/MyCourse";
 import MyPayment from "./pages/ProfilePage/MyPayment";
-import CoursesPage from "./pages/CoursesPage";
 import CourseDetailPage from "./pages/CourseDetailPage";
 import BlogPage from "./pages/BlogPage";
 import BlogDetailPage from "./pages/BlogDetailPage";
@@ -18,6 +17,7 @@ import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import NotfoundPage from "./pages/NotfoundPage";
+import CoursesPage from "./pages/CoursePage";
 
 function App() {
   return (
