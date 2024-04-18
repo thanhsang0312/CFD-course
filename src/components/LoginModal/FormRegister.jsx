@@ -99,12 +99,14 @@ const FormRegister = () => {
           {...register("password")}
           label="Mật khẩu"
           placeholder="Mật khẩu"
+          type="password"
           required
         />
         <Input
           {...register("confirmPassword")}
           label="Xác nhận mật khẩu"
           placeholder="Xác nhận mật khẩu"
+          type="password"
           required
         />
         <p className="form__argee">

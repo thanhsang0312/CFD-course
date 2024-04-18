@@ -1,6 +1,7 @@
 import React from "react";
 import { useAuthContext } from "../../context/AuthContext";
 import { MODAL_TYPE } from "../../const/generals";
+import tokenMethod from "../../utils/token";
 
 const SectionHero = () => {
   const { handleShowModal } = useAuthContext();
@@ -19,13 +20,15 @@ const SectionHero = () => {
           <p className="text">
             Dạy từ kinh nghiệm, học từ thực tế để tạo ra sản phẩm có giá trị.
           </p>
-          <div
-            className="btn btn--primary btnmodal"
-            data-modal="mdlogin"
-            onClick={_onLoginClick}
-          >
-            Bắt đầu học
-          </div>
+          {!tokenMethod.get() && (
+            <div
+              className="btn btn--primary btnmodal"
+              data-modal="mdlogin"
+              onClick={_onLoginClick}
+            >
+              Bắt đầu học
+            </div>
+          )}
         </div>
       </div>
       <div className="hero__bottom">

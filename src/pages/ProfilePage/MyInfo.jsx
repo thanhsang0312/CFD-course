@@ -115,7 +115,7 @@ const MyInfo = () => {
         <div className="form-container">
           <Input
             label="Email"
-            placeholder="Email"
+            placeholder={email}
             disabled
             {...register(email)}
           />
